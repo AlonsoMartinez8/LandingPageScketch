@@ -1,0 +1,61 @@
+#pricing.section .card {
+  position: relative;
+  height: 300px;
+  background: var(--c2);
+  border-radius: 1em;
+  transition: ease-in 0.3s;
+}
+
+#pricing.section .card:hover {
+  background: var(--c1);
+}
+
+#pricing.section .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 150;
+  background: linear-gradient(
+    45deg,
+    var(--c2),
+    var(--c6),
+    var(--c4),
+    var(--c5)
+  );
+  opacity: 0.8;
+  border-radius: 1em;
+}
+
+#pricing.section .card .card-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 200;
+}
+
+#pricing.section .card .card-content h3 {
+  text-align: center;
+  color: var(--c1);
+  font-size: 1.8em;
+  padding: 2em;
+  z-index: 200;
+}
+
+#pricing.section .card .card-content a {
+  z-index: 200;
+}
+
+#pricing.section .row .card .card-content .tag {
+  position: relative;
+  width: 80%;
+  background: var(--c1);
+  color: var(--c6);
+  margin: -1px auto;
+  z-index: 200;
+}

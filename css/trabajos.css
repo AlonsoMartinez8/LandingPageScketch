@@ -1,0 +1,29 @@
+#trabajos.section .row .card .card-img::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  -webkit-backdrop-filter: grayscale(1);
+  backdrop-filter: grayscale(1);
+}
+
+#trabajos.section .row .card .card-img img {
+  height: 100%;
+}
+
+#trabajos.section .row .card .tag {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+}
+
+#trabajos.section .row .card .card-img {
+  position: relative;
+  height: 400px;
+  text-align: center;
+}

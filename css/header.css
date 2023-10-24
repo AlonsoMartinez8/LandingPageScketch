@@ -1,0 +1,83 @@
+.header {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4em;
+  overflow-y: hidden;
+}
+
+.header-content {
+  position: relative;
+}
+
+.header-content h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--c4);
+}
+
+.header-content h3 {
+  color: var(--c3);
+}
+
+.header-content h3 span {
+  color: var(--c5);
+}
+
+.header-content-btns {
+  margin: 1.6em auto;
+  padding: 0.4em 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.header-carousel {
+  height: 80vh;
+  max-width: 500px;
+  background: var(--c4);
+}
+
+.header-content-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/tattoo-shop.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header-content-img::after {
+  position: absolute;
+  content: "";
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: grayscale(1);
+  backdrop-filter: grayscale(1);
+}
+
+@media (max-width: 1000px) {
+  .header {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    padding: 0 2em;
+    text-align: center;
+    min-height: 100vh;
+  }
+  .header-content h1 {
+    font-size: 3em;
+  }
+  .header-content-btns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header-content-img {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+  .header-carousel {
+    display: none;
+  }
+}

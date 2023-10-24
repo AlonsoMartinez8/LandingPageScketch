@@ -1,0 +1,7 @@
+#blur {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0 500px 250px var(--c3_2);
+    z-index: -300;
+}

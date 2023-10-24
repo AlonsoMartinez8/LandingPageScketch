@@ -1,0 +1,19 @@
+footer {
+    padding: 4em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    background: var(--c6);
+    color: var(--c1);
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 0 100px 10px var(--c6_2);
+    margin-top: 2em;
+}
+
+@media (max-width: 900px) {
+    footer {
+        grid-template-columns: 1fr;
+        gap: 3em;
+    }
+}

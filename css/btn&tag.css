@@ -1,0 +1,32 @@
+.btn {
+  padding: 0.4em 2em;
+  background: linear-gradient(45deg, var(--c2_1), var(--c3_1));
+  color: var(--c2);
+  border-radius: 1em;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: linear-gradient(0deg, var(--c2_1), var(--c4_1));
+  box-shadow: 0 0 10px var(--c2);
+}
+
+.btn-1 {
+  background: linear-gradient(45deg, var(--c2_1), var(--c5));
+  color: var(--c1);
+  font-weight: 600;
+}
+
+.btn-1:hover {
+  color: var(--c2);
+}
+
+.tag {
+  padding: 0.4em 2em;
+  background: var(--c2_2);
+  color: var(--c1);
+  font-weight: 600;
+  border-radius: 1em;
+  text-align: center;
+}

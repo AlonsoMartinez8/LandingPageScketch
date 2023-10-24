@@ -1,0 +1,71 @@
+#contacto.section {
+  padding: 0;
+}
+
+#contacto.section .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#contacto ul#socials {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 3em;
+}
+
+#contacto ul#socials li {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+#contacto ul#socials li::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, var(--c6));
+  border-radius: 100%;
+  z-index: -200;
+  transition: ease-in-out .3s;
+}
+
+#contacto ul#socials li:hover::after{
+  transform: translateX(75px) translateY(50px);
+  background: linear-gradient(45deg, transparent, var(--c6));
+  box-shadow: 0 0 20px var(--c2);
+}
+
+#contacto ul#socials li a {
+  width: 100%;
+  height: 100%;
+  color: var(--c5);
+}
+
+#contacto ul#socials li a:hover {
+  color: var(--c2);
+}
+
+@media (max-width: 900px) {
+  #contacto.section .content {
+    grid-template-columns: 1fr;
+    padding: 1em;
+  }
+
+  #contacto ul#socials {
+    padding: 1em;
+  }
+
+  #contacto ul#socials li:hover::after{
+    transform: translateX(0) translateY(50px);
+  }
+}
